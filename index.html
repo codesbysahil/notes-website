@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📚Handwritten Notes</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function searchNotes() {
+      let input = document.getElementById('searchInput').value.toLowerCase();
+      let cards = document.getElementsByClassName('note-card');
+      Array.from(cards).forEach(card => {
+        let title = card.getElementsByTagName('h2')[0].innerText.toLowerCase();
+        card.style.display = title.includes(input) ? 'flex' : 'none';
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>📘 Handwritten Notes and Many More</h1>
+    <p>Explore handwritten notes, coding, interviews & more!</p>
+
+  </header>
+
+  <div class="top-bar">
+    <div class="menu">
+      <a href="#coding">Coding Languages Notes</a>
+      <a href="#frameworks">Frameworks Notes</a>
+      <a href="#interview">Interview Questions</a>
+      <a href="#extra">Extra Notes</a>
+    </div>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search notes..." onkeyup="searchNotes()" />
+    </div>
+  </div>
+
+  <main>
+    <section id="coding">
+      <h2 class="section-title">💻 Coding Languages</h2>
+      <div class="notes-grid">
+        <div class="note-card">
+          <img src="assets/images/Clang.jpg" class="" alt="Book Cover" />
+          <h2>Maths - Chapter 1</h2>
+          <div class="buttons">
+            <a href="https://drive.google.com/file/d/1KjEK7OS1bZgKHz00xr7JFPPbbZRKbZ-7/preview" target="_blank">
+              <button class="view-btn">View</button>
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1KjEK7OS1bZgKHz00xr7JFPPbbZRKbZ-7">
+              <button class="download-btn">Download</button>
+            </a>
+          </div>
+        </div>
+        <!-- addmore -->
+      </div>
+    </section>
+
+    <section id="frameworks">
+      <h2 class="section-title">🧰 Frameworks</h2>
+      <div class="notes-grid">
+        <div class="note-card">
+          <img src="assets/images/Clang.jpg" class="" alt="Book Cover" />
+          <h2>Maths - Chapter 1</h2>
+          <div class="buttons">
+            <a href="https://drive.google.com/file/d/1KjEK7OS1bZgKHz00xr7JFPPbbZRKbZ-7/preview" target="_blank">
+              <button class="view-btn">View</button>
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1KjEK7OS1bZgKHz00xr7JFPPbbZRKbZ-7">
+              <button class="download-btn">Download</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interview">
+      <h2 class="section-title">🎯 Interview Questions</h2>
+      <div class="notes-grid">
+        <div class="note-card">
+          <img src="assets/images/Clang.jpg" class="" alt="Book Cover" />
+          <h2>Maths - Chapter 1</h2>
+          <div class="buttons">
+            <a href="https://drive.google.com/file/d/1KjEK7OS1bZgKHz00xr7JFPPbbZRKbZ-7/preview" target="_blank">
+              <button class="view-btn">View</button>
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1KjEK7OS1bZgKHz00xr7JFPPbbZRKbZ-7">
+              <button class="download-btn">Download</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="extra">
+      <h2 class="section-title">🧾 Extra</h2>
+      <div class="notes-grid">
+        <!-- Add cards here -->
+         <div class="note-card">
+          <img src="assets/images/Clang.jpg" class="" alt="Book Cover" />
+          <h2>Maths - Chapter 1</h2>
+          <div class="buttons">
+            <a href="https://drive.google.com/file/d/1KjEK7OS1bZgKHz00xr7JFPPbbZRKbZ-7/preview" target="_blank">
+              <button class="view-btn">View</button>
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1KjEK7OS1bZgKHz00xr7JFPPbbZRKbZ-7">
+              <button class="download-btn">Download</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+  Created by 
+  <a href="https://www.instagram.com/codesbysahil/" target="_blank" style="color: #3d08ff; ">
+    CodesBySahil
+  </a> 
+  | © 2025
+</p>
+
+  </footer>
+</body>
+</html>
